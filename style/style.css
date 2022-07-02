@@ -1,0 +1,296 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+body {
+  background-color: hsl(185deg, 41%, 84%);
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.wrapper {
+  max-width: 750px;
+  margin: 100px auto;
+  padding: 30px;
+}
+@media (max-width: 600px) {
+  .wrapper {
+    margin: 0 auto;
+  }
+}
+
+.header {
+  text-align: center;
+  font-size: 25px;
+  line-height: 140%;
+  margin-bottom: 50px;
+}
+
+.form {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.form-settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 30px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+}
+.form-result {
+  width: 100%;
+  padding: 30px;
+  background-color: hsl(183deg, 100%, 15%);
+  border-radius: 20px;
+}
+@media (max-width: 600px) {
+  .form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form-settings {
+    padding-right: 0px;
+  }
+}
+
+.error {
+  border: dotted 2px red;
+}
+
+.bill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: hsl(184deg, 14%, 56%);
+}
+.bill-input {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: right;
+  border-radius: 5px;
+  background-color: hsl(189deg, 41%, 97%);
+  background: url(../images/icon-dollar.svg) no-repeat left;
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(183deg, 100%, 15%);
+  padding: 8px 0;
+}
+.bill-input:focus {
+  background-color: hsl(189deg, 41%, 97%);
+  border: hsl(172deg, 67%, 45%) 1px solid;
+}
+
+.procentTip-body {
+  margin-bottom: 20px;
+}
+.procentTip-title {
+  margin-bottom: 20px;
+  color: hsl(184deg, 14%, 56%);
+}
+.procentTip-size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.procentTip-btn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 25%;
+          flex: 1 0 25%;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.procentTip-btn.active button {
+  color: hsl(183deg, 100%, 15%);
+  background-color: hsl(172deg, 67%, 45%);
+}
+.procentTip-btn input {
+  width: 100%;
+  color: #fff;
+  background-color: hsl(185deg, 41%, 84%);
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #fff;
+}
+.procentTip-btn input:focus {
+  color: hsl(183deg, 100%, 15%);
+  border: hsl(172deg, 67%, 45%) 1px solid;
+}
+.procentTip-btn button {
+  width: 100%;
+  color: #fff;
+  background-color: hsl(183deg, 100%, 15%);
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.procentTip-btn:nth-child(6), .procentTip-btn:nth-child(3) {
+  margin-right: 0;
+}
+
+.numberPerson {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: hsl(184deg, 14%, 56%);
+}
+.numberPerson-input {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: right;
+  border-radius: 5px;
+  background-color: hsl(189deg, 41%, 97%);
+  background: url(../images/icon-person.svg) no-repeat left;
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(183deg, 100%, 15%);
+  padding: 8px 0;
+}
+.numberPerson-input:focus {
+  background-color: hsl(189deg, 41%, 97%);
+  border: hsl(172deg, 67%, 45%) 1px solid;
+}
+@media (max-width: 600px) {
+  .numberPerson {
+    margin-bottom: 10px;
+  }
+}
+
+.result-tipAmmount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.label {
+  font-size: 14px;
+  color: hsl(172deg, 67%, 45%);
+}
+.label span {
+  color: hsl(184deg, 14%, 56%);
+}
+
+.number {
+  font-size: 35px;
+  color: hsl(172deg, 67%, 45%);
+}
+
+.result-total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 90px;
+}
+
+.btn-result {
+  background-color: hsl(172deg, 67%, 45%);
+  width: 100%;
+  padding: 10px 0;
+}

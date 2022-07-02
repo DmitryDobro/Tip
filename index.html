@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="wrapper">
+ 
+  <header class="header">
+    SPLI <br>
+    TTER
+  </header>
+      <form action="" class="form acrt" >
+
+          <div class="form-settings settings">
+          <!-- Ввод общей суммы -->
+              <div class="settings-bill bill">
+                <label for="billInput" class="bill-label ">Bill</label>
+                <input type="text" class="bill-input _req" id="billInput">
+              </div>
+                <!-- Выбор процента чаевых -->
+              <div class="settings-procentTip procentTip">
+                <div class="procentTip-body">
+                  <div class="procentTip-title">Select Tip %</div>
+                  <div class="procentTip-size">
+                    
+                    <div class="procentTip-btn active">
+                        <!-- <input type="radio" class="procentTip-radio" id="procentRadio5" name="radioBtn" value="5">
+                        <label for="procentRadio5" class="procentTip-label"></label> -->
+                      <button type="button" value="5" id="procentRadio5">5%</button>
+                    </div>
+                    <div class="procentTip-btn">
+                      <button type="button" value="10" id="procentRadio10">10%</button>
+                    </div>
+                    <div class="procentTip-btn">      
+                      <button type="button" value="15">15%</button>
+                    </div>
+                    <div class="procentTip-btn">
+                      <button type="button" value="25">25%</button>
+                    </div>
+                    <div class="procentTip-btn">
+                      <button type="button" value="50">50%</button>
+                    </div>
+                    <div class="procentTip-btn custom">
+                      <input type="text" placeholder="Custom" value="" class="">
+                      <!-- <button class="" type="button" id="btnCustom">Custom</button> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Колличество людей -->
+              <div class="settings-numberPerson numberPerson">
+                <label for="numberPersonInput">  Number of People</label>
+                <input type="text" class="numberPerson-input _req" id="numberPersonInput">
+              </div>
+          </div>
+
+          <div class="form-result">
+            <div class="result-number">
+            <div class="result-tipAmmount">
+
+              <div class="label">Чаевые <span><br>/на человека</span></div>
+              <div class="number">$0.00</div>
+            </div>
+            <div class="result-total">
+              <div class="label">Сумма по счету<span><br>/на человека</span>
+                </div>
+              <div class="number">$0.00</div>
+            </div>
+          </div>
+          <button class="btn-result" type="submit">Reset</button>
+
+        </div>
+      </form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+<script src="./script/script.js"></script>
+</body>
+</html>
